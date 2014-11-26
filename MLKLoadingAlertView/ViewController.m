@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "MLKLoadingAlertView.h"
 
-#define TITLE   @"Loading iOS 7 Customised Alert View"
+#define TITLE   @"Loading iOS Customised Alert View"
 #define DELAY   10.0
 
 @interface ViewController ()

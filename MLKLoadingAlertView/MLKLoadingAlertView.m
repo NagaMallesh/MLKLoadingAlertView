@@ -30,11 +30,11 @@
 {
     NSArray *subviews = [UIApplication sharedApplication].keyWindow.rootViewController.presentedViewController.view.subviews;
     
-    if( subviews.count > 1 )
+    if( subviews.count >= 1 )
     {
         // iOS while presenting an alertview uses a presening view controller. That controller's view has several subviews. I have picked one
         // subview from it which has frame similar to the alertview frame.
-        UIView *presentedView = [subviews objectAtIndex:1];
+        UIView *presentedView = [subviews objectAtIndex:0];
         
          UIActivityIndicatorView *customActivityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         [customActivityIndicator startAnimating];
